@@ -4,48 +4,562 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Certification Preparation</title>
+    <meta name="description" content="Privacy Policy for the Certification Preparation mobile application by CSSMatter.">
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1, h2 { color: #2c3e50; }
-        a { color: #3498db; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.75;
+            color: #1a1a2e;
+            background: #f8f9fc;
+        }
+
+        .page-wrap {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 0 24px 80px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #5645d4 0%, #7c3aed 100%);
+            color: #fff;
+            padding: 56px 24px 48px;
+            margin-bottom: 48px;
+        }
+
+        header .inner {
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        header .eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            opacity: 0.75;
+            margin-bottom: 12px;
+        }
+
+        header h1 {
+            font-size: clamp(28px, 5vw, 42px);
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+
+        header .meta {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .toc {
+            background: #fff;
+            border: 1px solid #e5e3df;
+            border-radius: 14px;
+            padding: 28px 32px;
+            margin-bottom: 40px;
+        }
+
+        .toc h2 {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #5645d4;
+            margin-bottom: 16px;
+        }
+
+        .toc ol {
+            padding-left: 20px;
+        }
+
+        .toc li {
+            margin-bottom: 6px;
+        }
+
+        .toc a {
+            color: #5d5b54;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .toc a:hover {
+            color: #5645d4;
+            text-decoration: underline;
+        }
+
+        section {
+            background: #fff;
+            border: 1px solid #e5e3df;
+            border-radius: 14px;
+            padding: 36px 36px 32px;
+            margin-bottom: 24px;
+            scroll-margin-top: 24px;
+        }
+
+        section h2 {
+            font-size: 20px;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        section h2 .num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            background: #e6e0f5;
+            color: #5645d4;
+            font-size: 14px;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        section h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin: 24px 0 10px;
+        }
+
+        section p {
+            color: #3d3d3d;
+            font-size: 15px;
+            margin-bottom: 14px;
+        }
+
+        section p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul, ol {
+            padding-left: 22px;
+            margin-bottom: 14px;
+        }
+
+        li {
+            color: #3d3d3d;
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background: #f0ecfc;
+            border-left: 4px solid #5645d4;
+            border-radius: 0 10px 10px 0;
+            padding: 16px 20px;
+            margin: 20px 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            color: #3d2e8c;
+            font-weight: 500;
+        }
+
+        .warning-box {
+            background: #fff7ed;
+            border-left: 4px solid #dd5b00;
+            border-radius: 0 10px 10px 0;
+            padding: 16px 20px;
+            margin: 20px 0;
+        }
+
+        .warning-box p {
+            margin: 0;
+            color: #7c3300;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+
+        th {
+            background: #f6f5f4;
+            text-align: left;
+            padding: 12px 16px;
+            font-weight: 700;
+            color: #1a1a1a;
+            border-bottom: 2px solid #e5e3df;
+        }
+
+        td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #f0eee9;
+            color: #3d3d3d;
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        a {
+            color: #5645d4;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-card {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: #f6f5f4;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-top: 20px;
+        }
+
+        .contact-card .icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: #e6e0f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .contact-card .label {
+            font-size: 13px;
+            color: #5d5b54;
+            margin-bottom: 2px;
+        }
+
+        .contact-card .value a {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 24px 24px;
+            color: #a4a097;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            section { padding: 24px 20px; }
+            .toc { padding: 20px; }
+            header { padding: 36px 20px 32px; }
+        }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <p><strong>Last updated: June 5, 2026</strong></p>
-    
-    <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Certification Preparation application and tells You about Your privacy rights and how the law protects You.</p>
 
-    <h2>1. Information We Collect</h2>
-    <p>While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:</p>
-    <ul>
-        <li>Email address (for authentication)</li>
-        <li>Usage Data (e.g., test scores, practice progress, wishlists)</li>
-    </ul>
+<header>
+    <div class="inner">
+        <p class="eyebrow">CSSMatter · Legal</p>
+        <h1>Privacy Policy</h1>
+        <p class="meta">Last updated: June 11, 2026 &nbsp;·&nbsp; Effective date: June 11, 2026</p>
+    </div>
+</header>
 
-    <h2>2. Third-Party Services</h2>
-    <p>We may employ third-party companies and individuals to facilitate our Service ("Service Providers"), to provide the Service on our behalf, or to assist us in analyzing how our Service is used. These third parties have access to your Personal Data only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose. These include:</p>
-    <ul>
-        <li><strong>Supabase:</strong> For secure authentication and cloud database management.</li>
-        <li><strong>RevenueCat:</strong> For securely processing in-app purchases and managing lifetime unlocks.</li>
-    </ul>
+<div class="page-wrap">
 
-    <h2>3. Use of Your Personal Data</h2>
-    <p>The Company may use Personal Data for the following purposes:</p>
-    <ul>
-        <li><strong>To provide and maintain our Service:</strong> including tracking test progress.</li>
-        <li><strong>To manage Your Account:</strong> to manage Your registration as a user of the Service.</li>
-        <li><strong>For the performance of a contract:</strong> the development, compliance and undertaking of the purchase contract for the premium features You have purchased.</li>
-    </ul>
+    <div class="toc">
+        <h2>Contents</h2>
+        <ol>
+            <li><a href="#s1">Information We Collect</a></li>
+            <li><a href="#s2">Advertising &amp; App Tracking Transparency</a></li>
+            <li><a href="#s3">Third-Party Services</a></li>
+            <li><a href="#s4">Push Notifications</a></li>
+            <li><a href="#s5">How We Use Your Data</a></li>
+            <li><a href="#s6">Data Retention &amp; Deletion</a></li>
+            <li><a href="#s7">Security</a></li>
+            <li><a href="#s8">Children's Privacy</a></li>
+            <li><a href="#s9">Changes to This Policy</a></li>
+            <li><a href="#s10">Contact Us</a></li>
+        </ol>
+    </div>
 
-    <h2>4. Security of Your Personal Data</h2>
-    <p>The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security. We utilize Row Level Security (RLS) to ensure your data is isolated and protected.</p>
+    <section id="s1">
+        <h2><span class="num">1</span> Information We Collect</h2>
 
-    <h2>5. Changes to this Privacy Policy</h2>
-    <p>We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.</p>
+        <p>We collect the following categories of information when you use the <strong>Certification Preparation</strong> app:</p>
 
-    <h2>6. Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, You can contact us at our support email.</p>
+        <h3>Account &amp; Authentication Data</h3>
+        <ul>
+            <li><strong>Email address</strong> — collected when you sign up or sign in with email/password.</li>
+            <li><strong>Google account name &amp; email</strong> — collected if you choose to sign in with Google.</li>
+            <li><strong>Apple ID</strong> — collected if you choose to sign in with Apple.</li>
+            <li><strong>Guest session ID</strong> — a temporary anonymous identifier assigned when you use the app without signing in. If you later create a full account, your guest data is merged.</li>
+        </ul>
+
+        <h3>Usage &amp; Progress Data</h3>
+        <ul>
+            <li>Practice test scores, completion status, and time spent per test.</li>
+            <li>Certification wishlists and enrolled certifications.</li>
+            <li>In-app purchase records (which certifications you have unlocked).</li>
+        </ul>
+
+        <h3>Device &amp; Technical Data</h3>
+        <ul>
+            <li>Push notification token (only if you grant permission — see Section 4).</li>
+            <li>Platform (iOS / Android) — used to deliver the correct experience.</li>
+            <li>Advertising Identifier (IDFA) — <strong>only if you grant permission</strong> via the App Tracking Transparency (ATT) prompt (see Section 2).</li>
+        </ul>
+
+        <div class="highlight-box">
+            <p>We do <strong>not</strong> collect your name, phone number, physical location, photos, contacts, or any financial payment details. Payments are processed entirely by Apple (App Store) and managed by RevenueCat.</p>
+        </div>
+    </section>
+
+    <section id="s2">
+        <h2><span class="num">2</span> Advertising &amp; App Tracking Transparency</h2>
+
+        <p>The app displays ads served by <strong>Google AdMob</strong>. On iOS and iPadOS, Apple requires us to ask for your permission before using your device's Advertising Identifier (IDFA) to show you personalized ads. This is called the <strong>App Tracking Transparency (ATT)</strong> framework.</p>
+
+        <h3>What Happens When You Open the App</h3>
+        <p>Before any personalized ad is loaded, you will see a system dialog from Apple that reads:</p>
+
+        <div class="highlight-box">
+            <p>"This identifier will be used to deliver personalized ads to you."</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Your Choice</th>
+                    <th>What It Means</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Allow Tracking</strong></td>
+                    <td>Google AdMob may use your IDFA to show ads relevant to your interests, based on activity across other apps and websites.</td>
+                </tr>
+                <tr>
+                    <td><strong>Ask App Not to Track</strong></td>
+                    <td>Google AdMob will show <em>non-personalized</em> ads only. Your IDFA is not used. You may still see ads, but they will not be tailored to your profile.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Changing Your Choice</h3>
+        <p>You can change your tracking preference at any time in your device settings:</p>
+        <p><strong>Settings → Privacy &amp; Security → Tracking → Certification Preparation</strong></p>
+
+        <h3>What "Tracking" Means</h3>
+        <p>Per Apple's definition, tracking means linking data collected from this app with third-party data for advertising purposes, or sharing that data with a data broker. We do not sell your data. The only tracking that occurs (if you grant permission) is the use of your IDFA by Google AdMob to serve personalized advertisements.</p>
+
+        <p>For more information, see <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Google AdMob's data practices</a>.</p>
+    </section>
+
+    <section id="s3">
+        <h2><span class="num">3</span> Third-Party Services</h2>
+
+        <p>We use the following third-party service providers. Each has their own privacy policy governing how they handle data:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Purpose</th>
+                    <th>Data Shared</th>
+                    <th>Privacy Policy</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Supabase</strong></td>
+                    <td>Authentication, cloud database (progress, purchases, profiles)</td>
+                    <td>Email, user ID, progress data</td>
+                    <td><a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Google Sign-In</strong></td>
+                    <td>Optional OAuth sign-in via Google account</td>
+                    <td>Google account email &amp; name</td>
+                    <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Sign in with Apple</strong></td>
+                    <td>Optional OAuth sign-in via Apple ID</td>
+                    <td>Apple ID token (may be anonymized)</td>
+                    <td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></td>
+                </tr>
+                <tr>
+                    <td><strong>RevenueCat</strong></td>
+                    <td>In-app purchase management &amp; subscription tracking</td>
+                    <td>User ID, purchase events</td>
+                    <td><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Google AdMob</strong></td>
+                    <td>Display advertising</td>
+                    <td>IDFA (only if ATT permission granted)</td>
+                    <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Expo / Expo Notifications</strong></td>
+                    <td>Push notification delivery infrastructure</td>
+                    <td>Push token, platform type</td>
+                    <td><a href="https://expo.dev/privacy" target="_blank" rel="noopener">expo.dev/privacy</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="warning-box">
+            <p>We do <strong>not</strong> share your data with any data brokers, marketing companies, or advertisers beyond what is described in this table.</p>
+        </div>
+    </section>
+
+    <section id="s4">
+        <h2><span class="num">4</span> Push Notifications</h2>
+
+        <p>On iOS and iPadOS, the app may ask for permission to send you push notifications. These are used exclusively for:</p>
+        <ul>
+            <li>Study reminders you configure within the app.</li>
+            <li>Important updates related to your certification preparation.</li>
+        </ul>
+
+        <p>If you grant notification permission, your <strong>device push token</strong> is stored in our secure database (Supabase) and associated with your user account. This token is used only to deliver notifications to your device.</p>
+
+        <p>You can revoke notification permission at any time in your device settings:</p>
+        <p><strong>Settings → Notifications → Certification Preparation</strong></p>
+
+        <p>Revoking notification permission does not affect any other features of the app.</p>
+    </section>
+
+    <section id="s5">
+        <h2><span class="num">5</span> How We Use Your Data</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Purpose</th>
+                    <th>Legal Basis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>To provide and maintain the app (sync progress, enable purchases)</td>
+                    <td>Contract performance</td>
+                </tr>
+                <tr>
+                    <td>To authenticate your account and prevent fraud</td>
+                    <td>Contract performance / Legitimate interest</td>
+                </tr>
+                <tr>
+                    <td>To manage your in-app purchases and restore them across devices</td>
+                    <td>Contract performance</td>
+                </tr>
+                <tr>
+                    <td>To send study reminders (only if you granted notification permission)</td>
+                    <td>Consent</td>
+                </tr>
+                <tr>
+                    <td>To display personalized ads (only if you granted ATT permission)</td>
+                    <td>Consent</td>
+                </tr>
+                <tr>
+                    <td>To display non-personalized ads (always, with or without ATT permission)</td>
+                    <td>Legitimate interest</td>
+                </tr>
+                <tr>
+                    <td>To respond to support requests and feedback</td>
+                    <td>Legitimate interest</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>We do not use your data for automated decision-making or profiling beyond ad personalization (which is governed by your ATT choice).</p>
+    </section>
+
+    <section id="s6">
+        <h2><span class="num">6</span> Data Retention &amp; Deletion</h2>
+
+        <h3>Retention</h3>
+        <p>We retain your account data (email, progress, purchases) for as long as your account is active. If you do not use the app for more than 3 years, we may delete inactive accounts.</p>
+
+        <h3>Deleting Your Account</h3>
+        <p>You can permanently delete your account and all associated data at any time, directly within the app:</p>
+        <ol>
+            <li>Open the app and go to <strong>Profile</strong>.</li>
+            <li>Tap the <strong>Settings</strong> icon (top-right).</li>
+            <li>Scroll to <strong>Account Actions</strong>.</li>
+            <li>Tap <strong>Delete Account</strong> and confirm.</li>
+        </ol>
+
+        <p>This action is <strong>irreversible</strong>. It permanently removes your profile, test attempts, purchase records, and push token from our servers. After deletion, you will be signed out immediately.</p>
+
+        <p>If you experience any issues with account deletion, contact us at <a href="mailto:cssmatter@gmail.com">cssmatter@gmail.com</a>.</p>
+
+        <h3>Guest Data</h3>
+        <p>If you use the app as a guest (without signing in), a temporary anonymous session is created. If you later sign up, your guest progress is merged into your new account. If you never sign up, the anonymous session data is retained for up to 90 days before automatic deletion.</p>
+    </section>
+
+    <section id="s7">
+        <h2><span class="num">7</span> Security</h2>
+
+        <p>We take the security of your data seriously and implement the following measures:</p>
+        <ul>
+            <li><strong>Row Level Security (RLS)</strong> on our Supabase database ensures each user can only access their own data — even at the database level.</li>
+            <li><strong>HTTPS / TLS</strong> encryption for all data in transit between the app and our servers.</li>
+            <li><strong>Secure token-based authentication</strong> — passwords are never stored in plain text; authentication is managed by Supabase Auth.</li>
+            <li><strong>No financial data stored by us</strong> — all payment processing is handled entirely by Apple and RevenueCat.</li>
+        </ul>
+
+        <p>No method of transmission over the internet is 100% secure. While we strive to use commercially acceptable means to protect your data, we cannot guarantee absolute security.</p>
+    </section>
+
+    <section id="s8">
+        <h2><span class="num">8</span> Children's Privacy</h2>
+
+        <p>The Certification Preparation app is intended for users who are <strong>13 years of age or older</strong>. We do not knowingly collect personally identifiable information from children under 13.</p>
+
+        <p>If you are a parent or guardian and believe your child has provided personal information to us, please contact us at <a href="mailto:cssmatter@gmail.com">cssmatter@gmail.com</a> and we will promptly delete that information.</p>
+    </section>
+
+    <section id="s9">
+        <h2><span class="num">9</span> Changes to This Privacy Policy</h2>
+
+        <p>We may update this Privacy Policy from time to time. When we make material changes, we will update the <strong>"Last updated"</strong> date at the top of this page.</p>
+
+        <p>We encourage you to review this page periodically. Your continued use of the app after any changes constitutes your acceptance of the updated policy.</p>
+
+        <p>Significant changes (such as new data collection practices) will be communicated via a notice within the app or via the email address associated with your account.</p>
+    </section>
+
+    <section id="s10">
+        <h2><span class="num">10</span> Contact Us</h2>
+
+        <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us:</p>
+
+        <div class="contact-card">
+            <div class="icon">✉️</div>
+            <div>
+                <p class="label">Email</p>
+                <p class="value"><a href="mailto:cssmatter@gmail.com">cssmatter@gmail.com</a></p>
+            </div>
+        </div>
+
+        <p style="margin-top: 20px;">We aim to respond to all privacy-related inquiries within <strong>5 business days</strong>.</p>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 CSSMatter · Certification Preparation · <a href="mailto:cssmatter@gmail.com">cssmatter@gmail.com</a></p>
+</footer>
+
 </body>
 </html>
